@@ -30,6 +30,7 @@ fmt:
 
 check:
 	go test $(TARGETS_NOVENDOR)
+	go vet -v $(TARGETS_NOVENDOR)
 
 clean:
 	rm -rf bin/*
